@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Wachtwoord Vergeten</value>
+  </data>
+  <data name="InvalidAPIKeyprovided" xml:space="preserve">
+    <value>Ongeldige API Key opgegeven</value>
+  </data>
+  <data name="InvalidUsernamePassword" xml:space="preserve">
+    <value>Ongeldige gebruikersnaam en/of wachtwoord</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Inloggen</value>
+  </data>
+  <data name="LoginIncorrect" xml:space="preserve">
+    <value>Ongeldige Login</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Uitloggen</value>
+  </data>
+  <data name="NoAPIKeyprovided" xml:space="preserve">
+    <value>Geen API key opgegeven</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Niet geautoriseerd</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Onthoud Mij</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Veld is verplicht {0}</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Gebruikersnaam</value>
+  </data>
+  <data name="NoAPIKeyConfigured" xml:space="preserve">
+    <value>Geen API-sleutel geconfigureerd</value>
+  </data>
+  <data name="NoAPIUrlConfigured" xml:space="preserve">
+    <value>Geen API-URL geconfigureerd</value>
+  </data>
+  <data name="BarcodeImageUrl" xml:space="preserve">
+    <value>Barcode-afbeelding-URL</value>
+  </data>
+  <data name="FirstSetup" xml:space="preserve">
+    <value>Eerste installatie</value>
+  </data>
+  <data name="InvalidTwoFactorCode" xml:space="preserve">
+    <value>Ongeldige twee-factorcode</value>
+  </data>
+  <data name="ManualSetupCode" xml:space="preserve">
+    <value>Handmatige setupcode</value>
+  </data>
+  <data name="TwoFactorToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Chinees</value>
+  </data>
+  <data name="Dutch" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Engels</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Frans</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Duits</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russisch</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Mijn account</value>
+  </data>
+  <data name="AccountSettings" xml:space="preserve">
+    <value>Accountinstellingen</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>Communicatie</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Kader</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Thuis</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>testen</value>
+  </data>
+  <data name="Testpage" xml:space="preserve">
+    <value>Testpagina</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Mijn Account</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Guidelines" xml:space="preserve">
+    <value>Richtlijnen</value>
+  </data>
+  <data name="Checkboxes" xml:space="preserve">
+    <value>Aanvinkvakken</value>
+  </data>
+  <data name="CustomParamaters" xml:space="preserve">
+    <value>Aangepaste Paramaters</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Standaard</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Uitgeschakeld</value>
+  </data>
+  <data name="TextBoxes" xml:space="preserve">
+    <value>TextBoxes</value>
+  </data>
+  <data name="Grids" xml:space="preserve">
+    <value>Rasters</value>
+  </data>
+  <data name="Urls" xml:space="preserve">
+    <value>URL's</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Waarschuwingen</value>
+  </data>
+  <data name="Dialogs" xml:space="preserve">
+    <value>Dialogs</value>
+  </data>
+  <data name="Buttons" xml:space="preserve">
+    <value>Knoppen</value>
+  </data>
+  <data name="ReturnUrl" xml:space="preserve">
+    <value>Retour URL</value>
+  </data>
+  <data name="DateTimeControls" xml:space="preserve">
+    <value>DateTime controle!</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Radio buttons</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Uit</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>Aan</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Juist</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Onjuist</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>Relaties</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>overzicht</value>
+  </data>
+  <data name="Branche" xml:space="preserve">
+    <value>Branche</value>
+  </data>
+  <data name="CreditNumber" xml:space="preserve">
+    <value>Credit nummer</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>E-mailadres</value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Omzet</value>
+  </data>
+  <data name="Matchs" xml:space="preserve">
+    <value>Snap ik niks van!</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>_Toevoegen &gt;&gt;</value>
+  </data>
+  <data name="AddFormTitle" xml:space="preserve">
+    <value>NIEUW RECORD</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>En</value>
+  </data>
+  <data name="BatchSaveConfirm" xml:space="preserve">
+    <value>Weet u zeker dat u wijzigingen wilt opslaan?!</value>
+  </data>
+  <data name="BatchSaveLostChanges" xml:space="preserve">
+    <value>Niet-opgeslagen wijzigingen zullen verloren gaan. Weet u zeker dat u wilt doorgaan?!</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>Tussen</value>
+  </data>
+  <data name="Blanks" xml:space="preserve">
+    <value>breedband op rollen voor de fabricage van plaat</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>annuleren</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>annuleren</value>
+  </data>
+  <data name="CancelEdit" xml:space="preserve">
+    <value>Bent u zeker dat u uw wijzigingen wilt annuleren?</value>
+  </data>
+  <data name="ChooseColumns" xml:space="preserve">
+    <value>Kolom kiezen</value>
+  </data>
+  <data name="ChooseDate" xml:space="preserve">
+    <value>EEN DATUM KIEZEN</value>
+  </data>
+  <data name="ClearButton" xml:space="preserve">
+    <value>wissen</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Filter wissen</value>
+  </data>
+  <data name="Columnchooser" xml:space="preserve">
+    <value>Kolommen...</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Weet je zeker dat je dit wilt verwijderen</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Bevat:</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopiëren...</value>
+  </data>
+  <data name="Csvexport" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CustomFilter" xml:space="preserve">
+    <value>--- Aangepast filter ---</value>
+  </data>
+  <data name="CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>EEN DATUM KIEZEN</value>
+  </data>
+  <data name="CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Voer de waarde in!</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>Datumfilters</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Verwijderen?</value>
+  </data>
+  <data name="DeleteOperationAlert" xml:space="preserve">
+    <value>Geen records geselecteerd voor verwijderen bewerking!</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Record verwijderen</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>bewerk.</value>
+  </data>
+  <data name="EditFormTitle" xml:space="preserve">
+    <value>Details voor</value>
+  </data>
+  <data name="EditOperationAlert" xml:space="preserve">
+    <value>Geen records geselecteerd voor bewerkingsbewerking!</value>
+  </data>
+  <data name="EditRecord" xml:space="preserve">
+    <value>Record bewerken</value>
+  </data>
+  <data name="EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource moet niet leeg bij eerste keer worden geladen omdat kolommen worden gegenereerd vanuit dataSource in AutoGenerate kolom raster!</value>
+  </data>
+  <data name="EmptyRecord" xml:space="preserve">
+    <value>Geen records weer te geven!</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>Eindigt op</value>
+  </data>
+  <data name="EnterValue" xml:space="preserve">
+    <value>Voer de waarde in</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>Is gelijk aan</value>
+  </data>
+  <data name="Excelexport" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>exporteren</value>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>&lt;onwaar&gt;</value>
+  </data>
+  <data name="FilterbarTitle" xml:space="preserve">
+    <value>\s filter bar cel!</value>
+  </data>
+  <data name="FilterButton" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterFalse" xml:space="preserve">
+    <value>&lt;onwaar&gt;</value>
+  </data>
+  <data name="FilterMenu" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterTrue" xml:space="preserve">
+    <value>&lt;waar&gt;</value>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>Eerste Pagina</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>Groter dan</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>Groter dan of gelijk aan</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Deze kolom groeperen!</value>
+  </data>
+  <data name="GroupDisable" xml:space="preserve">
+    <value>Groeperen is uitgeschakeld voor deze kolom!</value>
+  </data>
+  <data name="GroupDropArea" xml:space="preserve">
+    <value>Sleep een kolomheader naar hier om op die kolom te groeperen</value>
+  </data>
+  <data name="InvalidFilterMessage" xml:space="preserve">
+    <value>Ongeldige Filter gegevens!</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Items:</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Laatste Pagina</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>Kleiner dan</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>Kleiner dan of gelijk aan</value>
+  </data>
+  <data name="MatchCase" xml:space="preserve">
+    <value>Identieke hoofdletters/kleine letters</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Volgende pagina &gt;</value>
+  </data>
+  <data name="NoResult" xml:space="preserve">
+    <value>(Geen overeenkomst gevonden).</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>Niet gelijk aan</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>Aantal Filters!</value>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>/, \, |, *, ?, ", &lt; of &gt;</value>
+  </data>
+  <data name="Pdfexport" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>&lt; Vorige pagina</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Afdrukken</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="SearchColumns" xml:space="preserve">
+    <value>zoeken in kolommen!</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Alles selecteren</value>
+  </data>
+  <data name="ShowRowsWhere" xml:space="preserve">
+    <value>Rijen weergeven waarvoor:</value>
+  </data>
+  <data name="SortAscending" xml:space="preserve">
+    <value>Oplopend sorteren</value>
+  </data>
+  <data name="SortDescending" xml:space="preserve">
+    <value>Aflopend sorteren</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>Begint met</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Tekstfilters</value>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>&lt;waar&gt;</value>
+  </data>
+  <data name="UnGroup" xml:space="preserve">
+    <value>Klik hier als u wilt opheffen</value>
+  </data>
+  <data name="Ungroup1" xml:space="preserve">
+    <value>Groepering opheffen door deze kolom</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value> Bijwerken</value>
+  </data>
+  <data name="Wordexport" xml:space="preserve">
+    <value>Exporteren</value>
+  </data>
+  <data name="AutoFit" xml:space="preserve">
+    <value>Auto Fit deze kolom!</value>
+  </data>
+  <data name="AutoFitAll" xml:space="preserve">
+    <value>Auto Fit alle kolommen!</value>
+  </data>
+  <data name="CurrentPageInfo" xml:space="preserve">
+    <value>{0} van {1} pagina's</value>
+    <comment>Grid</comment>
+  </data>
+  <data name="FirstPageTooltip" xml:space="preserve">
+    <value>Ga naar de eerste pagina</value>
+  </data>
+  <data name="LastPageTooltip" xml:space="preserve">
+    <value>Ga naar de laatste pagina</value>
+  </data>
+  <data name="NextPagerTooltip" xml:space="preserve">
+    <value>Ga naar de volgende pagina</value>
+  </data>
+  <data name="NextPageTooltip" xml:space="preserve">
+    <value>Ga naar de volgende pagina</value>
+  </data>
+  <data name="PreviousPagerTooltip" xml:space="preserve">
+    <value>Ga naar de vorige pagina</value>
+  </data>
+  <data name="PreviousPageTooltip" xml:space="preserve">
+    <value>Ga naar de vorige pagina</value>
+  </data>
+  <data name="TotalItemsInfo" xml:space="preserve">
+    <value>({0} records)</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+    <comment>Grid</comment>
+  </data>
+  <data name="PagerDropDown" xml:space="preserve">
+    <value>Items per pagina</value>
+    <comment>Grid</comment>
+  </data>
+  <data name="TwoFactorAuthentication" xml:space="preserve">
+    <value>Twee-staps authenticatie</value>
+  </data>
+  <data name="SelectACountry" xml:space="preserve">
+    <value>Selecteer een land</value>
+  </data>
+  <data name="Characters" xml:space="preserve">
+    <value>Tekens...</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Max.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Bericht:</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobiel</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Melding</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Verzenden</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Afzender</value>
+  </data>
+  <data name="TextMessage" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="TextMessageTestMessage" xml:space="preserve">
+    <value>Dit is een kleine test bericht om te sturen met het Fullstack Framework!</value>
+  </data>
+  <data name="EmailTestMessage" xml:space="preserve">
+    <value>&lt;p&gt; De rich-text-editor is WYSIWYG ("wat je ziet is wat je krijgt") editor nuttig om inhoud aan te maken en te bewerken, en de geldige &lt;a href = 'https: //ej2.syncfusion.com/home/' terug te sturen target = '_ blank'&gt; HTML-markeringen &lt;/a&gt; of &lt;a href='https://ej2.syncfusion.com/home/' target='_blank'&gt; markdown &lt;/a&gt; van de inhoud &lt;/ p&gt;</value>
+  </data>
+  <data name="TextMessageTestSender" xml:space="preserve">
+    <value>Fullstack</value>
+  </data>
+  <data name="PleaseProvideASenderName" xml:space="preserve">
+    <value>Geef de naam van een afzender</value>
+  </data>
+  <data name="PleaseProvideAMobileNumber" xml:space="preserve">
+    <value>Geef een mobiel nummer</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Bedrijf</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Geschiedenis</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Afwachtend</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefoon</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Selecteer land</value>
+  </data>
+</root>

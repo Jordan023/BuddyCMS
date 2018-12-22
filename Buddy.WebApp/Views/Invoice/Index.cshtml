@@ -1,0 +1,123 @@
+﻿
+<body class="layout layout-vertical layout-left-navigation layout-above-toolbar layout-above-footer">
+<main>
+@Html.Partial("_Header")
+<div id="wrapper">
+
+@Html.Partial("_Navigation")
+
+<div class="content-wrapper">
+
+<div class="content custom-scrollbar">
+<div class="doc data-table-doc page-layout simple full-width">
+<!-- HEADER -->
+<div class="page-header bg-primary text-auto p-6 row no-gutters align-items-center justify-content-between">
+    <h1 class="doc-title h4" id="content">Facturen</h1>
+</div>
+<!-- / HEADER -->
+    <!-- CONTENT -->
+   
+<div class="page-content p-6">
+<div class="content container">
+<div class="row">
+<div class="col-12">
+<div class="example ">
+    <div class="source-preview-wrapper">
+
+        <div class="preview">
+            <div class="preview-elements search-bar">
+                <div class="col search-wrapper pl-4">
+
+                    <div class="input-group">
+
+                        <input id="search-input" type="text" class="form-control" placeholder="Search" aria-label="Search" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-icon">
+                                <i class="icon icon-magnify"></i>
+                            </button>
+                        </span>
+
+
+                    </div>
+                </div>
+                <div class="loading-wrapper" style="margin-top: 25px;">
+                    <span id="loading-icon" class="loading-icon-small">
+                    </span>
+                </div>
+
+                <table id="invoice-table" class="table"></table>
+                <script type="text/javascript">
+                    LoadInvoices();
+
+                    function showLoading() {
+                        var x = document.getElementById("loading-icon");
+                        if (x.style.display === "none") {
+                            x.style.display = "inline-block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+
+
+                    function LoadInvoices() {
+                        $.getJSON('@Url.Action("GetInvoices", "Invoice")',
+                            function (json) {
+                                var jsonArray = JSON.parse(json);
+                                var tableArray = [];
+                                for (var i = 0; i < jsonArray.length; i++) {
+                                    var customerFullname = jsonArray[i].customer.firstName;
+                                    if (jsonArray[i].customer.middleName != null)
+                                        customerFullname += " " + jsonArray[i].customer.middleName;
+                                    customerFullname += " " + jsonArray[i].customer.lastName;
+
+                                    tableArray.push({
+                                        Factuurnummer: jsonArray[i].invoiceNumber,
+                                        Klant: customerFullname,
+                                        Omschrijving: jsonArray[i].description,
+                                        Factuurdatum: jsonArray[i].date
+                                    });
+                                }
+                                buildHtmlTable(tableArray, "#invoice-table");
+                                LoadDataTable();
+
+                                showLoading();
+                            });
+                        }
+                        function LoadDataTable() {
+
+                            $('#invoice-table').DataTable({
+                                responsive: true,
+                                dom: 'rt<"dataTables_footer"ip>',
+                                initComplete: function() {
+                                    var api = this.api(),
+                                        searchBox = $('#search-input');
+
+                                    // Bind an external input as a table wide search box
+                                    if (searchBox.length > 0) {
+                                        searchBox.on('keyup',
+                                            function(event) {
+                                                api.search(event.target.value).draw();
+                                            });
+                                    }
+                                }
+                            });
+                        }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTENT -->
+</div>
+</div>
+</div>
+
+</div>
+@Html.Partial("_Footer")
+</main>
+</body>
+

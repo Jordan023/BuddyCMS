@@ -1,0 +1,87 @@
+﻿
+<body class="layout layout-vertical layout-left-navigation layout-above-toolbar layout-above-footer">
+<main>
+@Html.Partial("_Header")
+<div id="wrapper">
+
+@Html.Partial("_Navigation")
+
+    <div class="content-wrapper">
+
+        <div class="content custom-scrollbar">
+            <div class="doc data-table-doc page-layout simple full-width">
+                <!-- HEADER -->
+                <div class="page-header bg-primary text-auto p-6 row no-gutters align-items-center justify-content-between">
+                    <h1 class="doc-title h4" id="content">Facturen</h1>
+                </div>
+                <!-- / HEADER -->
+                <!-- CONTENT -->
+   
+                <div class="page-content p-6">
+                    <div class="content container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="example">
+                                    <div class="description">
+                                        <div class="description-text">
+                                            <h5>Factuur toevoegen</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="source-preview-wrapper">
+                                        <div class="preview">
+                                            <div class="preview-elements">
+                                                <form id="needs-validation" novalidate="">
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom01">First name</label>
+                                                            <input type="text" class="form-control md-has-value" id="validationCustom01" placeholder="First name" value="Mark" required="">
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom02">Last name</label>
+                                                            <input type="text" class="form-control md-has-value" id="validationCustom02" placeholder="Last name" value="Otto" required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom03">City</label>
+                                                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid city.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationCustom04">State</label>
+                                                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="">
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid state.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 mb-3">
+                                                            <label for="validationCustom05">Zip</label>
+                                                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="">
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid zip.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary fuse-ripple-ready" type="submit">Submit form</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTENT -->
+            </div>
+        </div>
+    </div>
+
+</div>
+@Html.Partial("_Footer")
+</main>
+</body>
+

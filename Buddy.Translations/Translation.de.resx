@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Haben Sie Ihr Passwort vergessen</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Anmeldung</value>
+  </data>
+  <data name="LoginIncorrect" xml:space="preserve">
+    <value>Ungültiger Login</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Ausloggen</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Erinnere dich an mich</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Feld ist erforderlich {0}</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nutzername</value>
+  </data>
+  <data name="InvalidAPIKeyprovided" xml:space="preserve">
+    <value>Ungültiger API-Schlüssel wurde bereitgestellt</value>
+  </data>
+  <data name="InvalidUsernamePassword" xml:space="preserve">
+    <value>Benutzername / Kennwort ungültig</value>
+  </data>
+  <data name="NoAPIKeyConfigured" xml:space="preserve">
+    <value>Kein API-Schlüssel konfiguriert</value>
+  </data>
+  <data name="NoAPIUrlConfigured" xml:space="preserve">
+    <value>Keine API-URL konfiguriert</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Nicht berechtigt</value>
+  </data>
+  <data name="BarcodeImageUrl" xml:space="preserve">
+    <value>Barcode Bild URL</value>
+  </data>
+  <data name="FirstSetup" xml:space="preserve">
+    <value>Erstes Setup</value>
+  </data>
+  <data name="InvalidTwoFactorCode" xml:space="preserve">
+    <value>Ungültiger Zwei-Faktor-Code</value>
+  </data>
+  <data name="ManualSetupCode" xml:space="preserve">
+    <value>Manuelle Einrichtung</value>
+  </data>
+  <data name="TwoFactorToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Chinesisch</value>
+  </data>
+  <data name="Dutch" xml:space="preserve">
+    <value>Niederländisch</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russisch</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Konto</value>
+  </data>
+  <data name="AccountSettings" xml:space="preserve">
+    <value>Konto-Einstellungen</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>Kommunikation</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Instrumententafel</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Einzelheiten</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Framework</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Gitter</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Suche </value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Kontrollen</value>
+  </data>
+  <data name="Testpage" xml:space="preserve">
+    <value>Testseite</value>
+  </data>
+  <data name="NoAPIKeyprovided" xml:space="preserve">
+    <value>Es wurde kein API-Schlüssel bereitgestellt</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Mein Konto</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Guidelines" xml:space="preserve">
+    <value>Richtlinie</value>
+  </data>
+  <data name="Checkboxes" xml:space="preserve">
+    <value>Kontrollkästchen</value>
+  </data>
+  <data name="CustomParamaters" xml:space="preserve">
+    <value>Kundenspezifische Paramater</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Deaktiviert</value>
+  </data>
+  <data name="TextBoxes" xml:space="preserve">
+    <value>Textboxen</value>
+  </data>
+  <data name="Grids" xml:space="preserve">
+    <value>Raster</value>
+  </data>
+  <data name="Urls" xml:space="preserve">
+    <value>URLs</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Bilder</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Alarme</value>
+  </data>
+  <data name="Dialogs" xml:space="preserve">
+    <value>Dialoge</value>
+  </data>
+  <data name="Buttons" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="ReturnUrl" xml:space="preserve">
+    <value>Zurück URL</value>
+  </data>
+  <data name="DateTimeControls" xml:space="preserve">
+    <value>DateTime Steuerelemente!</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Radio Buttons</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Aus</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>An</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Richtig!</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Falsch!</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>Beziehungen</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="Branche" xml:space="preserve">
+    <value>Branche!</value>
+  </data>
+  <data name="CreditNumber" xml:space="preserve">
+    <value>Gutschriftsnummer</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>E-Mail Adresse</value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Einnahmen</value>
+  </data>
+  <data name="Matchs" xml:space="preserve">
+    <value>Snap Ik Niks van!</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>_Hinzufügen &gt;&gt;</value>
+  </data>
+  <data name="AddFormTitle" xml:space="preserve">
+    <value>Neue Aufnahme hinzufügen</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>Und</value>
+  </data>
+  <data name="autoFit" xml:space="preserve">
+    <value>Automatisch einpassen: in dieser Spalte!</value>
+  </data>
+  <data name="autoFitAll" xml:space="preserve">
+    <value>Automatisch einpassen: alle Spalten!</value>
+  </data>
+  <data name="BatchSaveConfirm" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie speichern möchten?</value>
+  </data>
+  <data name="BatchSaveLostChanges" xml:space="preserve">
+    <value>Nicht gespeicherte Änderungen werden verloren gehen. Sind Sie sicher, dass Sie fortfahren möchten?!</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>zwischen</value>
+  </data>
+  <data name="Blanks" xml:space="preserve">
+    <value>Zuschnitte</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="CancelEdit" xml:space="preserve">
+    <value>Bist du sicher, dass Sie die Änderungen verwerfen möchten?!</value>
+  </data>
+  <data name="ChooseColumns" xml:space="preserve">
+    <value>Wählen Sie die Spalte</value>
+  </data>
+  <data name="ChooseDate" xml:space="preserve">
+    <value>DATUM AUSWÄHLEN</value>
+  </data>
+  <data name="ClearButton" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Filter löschen</value>
+  </data>
+  <data name="Columnchooser" xml:space="preserve">
+    <value>Spalten...</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass, Sie dies löschen möchten</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Enthält:</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopieren...</value>
+  </data>
+  <data name="Csvexport" xml:space="preserve">
+    <value>CSV-Dateien exportieren</value>
+  </data>
+  <data name="CustomFilter" xml:space="preserve">
+    <value>Benutzerdefinierte Filter!</value>
+  </data>
+  <data name="CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>DATUM AUSWÄHLEN</value>
+  </data>
+  <data name="CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Geben Sie den/die Wert(e)</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen?</value>
+  </data>
+  <data name="DeleteOperationAlert" xml:space="preserve">
+    <value>Keine Datensätze ausgewählt für Löschvorgang!</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Datensatz löschen</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>bearbeiten</value>
+  </data>
+  <data name="EditFormTitle" xml:space="preserve">
+    <value>Information von</value>
+  </data>
+  <data name="EditOperationAlert" xml:space="preserve">
+    <value>Keine Datensätze ausgewählt für Bearbeitungsvorgang!</value>
+  </data>
+  <data name="EditRecord" xml:space="preserve">
+    <value>Eintrag bearbeiten</value>
+  </data>
+  <data name="EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource darf nicht bei Erstaufladung leer sein, da Spalten von DataSource in AutoGenerate Stützenraster generiert werden!</value>
+  </data>
+  <data name="EmptyRecord" xml:space="preserve">
+    <value>Keine Einträge zum Anzeigen vorhanden</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>Endet mit</value>
+  </data>
+  <data name="EnterValue" xml:space="preserve">
+    <value>Geben Sie den/die Wert(e)</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>EQUAL</value>
+  </data>
+  <data name="Excelexport" xml:space="preserve">
+    <value>Excel-Export</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exportieren</value>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>&lt;falsch&gt;</value>
+  </data>
+  <data name="FilterbarTitle" xml:space="preserve">
+    <value>\s Filterzelle Bar!</value>
+  </data>
+  <data name="FilterButton" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterFalse" xml:space="preserve">
+    <value>&lt;falsch&gt;</value>
+  </data>
+  <data name="FilterMenu" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="FilterTrue" xml:space="preserve">
+    <value>&lt;wahr&gt;</value>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>Erste Seite</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>Größer als</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>Größer als oder gleich</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Nach dieser Spalte gruppieren</value>
+  </data>
+  <data name="GroupDisable" xml:space="preserve">
+    <value>Gruppierung ist für diese Spalte deaktiviert!</value>
+  </data>
+  <data name="GroupDropArea" xml:space="preserve">
+    <value>Spaltenkopf hierhin ziehen, um nach dieser Spalte zu gruppieren</value>
+  </data>
+  <data name="InvalidFilterMessage" xml:space="preserve">
+    <value>Ungültiger Filterdaten!</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Elemente:</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Letzte Seite!</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>Kleiner als</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>Kleiner als oder gleich</value>
+  </data>
+  <data name="MatchCase" xml:space="preserve">
+    <value>Groß-/Kleinschreibung beachten</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Nächste Seite &gt;</value>
+  </data>
+  <data name="NoResult" xml:space="preserve">
+    <value>(Keine Entsprechung gefunden)</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>Nicht gleich</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>Anzahl Filter!</value>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>/, \, |, *, ?, ", &lt; oder &gt;</value>
+  </data>
+  <data name="Pdfexport" xml:space="preserve">
+    <value>PDF-Export</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>&lt; Vorherige Seite</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SearchColumns" xml:space="preserve">
+    <value>Spalten suchen</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Alle auswählen</value>
+  </data>
+  <data name="ShowRowsWhere" xml:space="preserve">
+    <value>Zeigen Zeilen wo:!</value>
+  </data>
+  <data name="SortAscending" xml:space="preserve">
+    <value>Αύξουσα Ταξινόμηση</value>
+  </data>
+  <data name="SortDescending" xml:space="preserve">
+    <value>Φθίνουσα Ταξινόμηση</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>Beginnt mit</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>&lt;wahr&gt;</value>
+  </data>
+  <data name="UnGroup" xml:space="preserve">
+    <value>Klicken Sie hier, um die Gruppierung aufheben!</value>
+  </data>
+  <data name="Ungroup1" xml:space="preserve">
+    <value>Heben Sie die Gruppierung nach dieser Spalte!</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value> Aktualisieren</value>
+  </data>
+  <data name="Wordexport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="AutoFit" xml:space="preserve">
+    <value>Automatisch einpassen: in dieser Spalte!</value>
+  </data>
+  <data name="AutoFitAll" xml:space="preserve">
+    <value>Automatisch einpassen: alle Spalten!</value>
+  </data>
+  <data name="CurrentPageInfo" xml:space="preserve">
+    <value>{0} von {1} Seiten!</value>
+  </data>
+  <data name="FirstPageTooltip" xml:space="preserve">
+    <value>Aller sur la première page</value>
+  </data>
+  <data name="LastPageTooltip" xml:space="preserve">
+    <value>Zur letzten Seite wechseln</value>
+  </data>
+  <data name="NextPagerTooltip" xml:space="preserve">
+    <value>Zur nächsten Seite wechseln</value>
+  </data>
+  <data name="NextPageTooltip" xml:space="preserve">
+    <value>Zur nächsten Seite wechseln</value>
+  </data>
+  <data name="PreviousPagerTooltip" xml:space="preserve">
+    <value>Zurück (vorherige Seite)</value>
+  </data>
+  <data name="PreviousPageTooltip" xml:space="preserve">
+    <value>Zurück (vorherige Seite)</value>
+  </data>
+  <data name="TotalItemsInfo" xml:space="preserve">
+    <value>Punkte</value>
+  </data>
+  <data name="TwoFactorAuthentication" xml:space="preserve">
+    <value>Zwei-Faktoren-Authentifizierung</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="PagerDropDown" xml:space="preserve">
+    <value>Artikel pro Seite</value>
+  </data>
+  <data name="SelectACountry" xml:space="preserve">
+    <value>Land auswählen</value>
+  </data>
+  <data name="Characters" xml:space="preserve">
+    <value>Zeichen</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Max.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Nachricht!</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Benachrichtigung!</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Senden!</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Die Telefonnummer des Absenders ist ungültig!</value>
+  </data>
+  <data name="TextMessage" xml:space="preserve">
+    <value>Textbereich</value>
+  </data>
+  <data name="TextMessageTestMessage" xml:space="preserve">
+    <value>Dies ist eine kleine Testnachricht, die mit dem Fullstack Framework gesendet wird!</value>
+  </data>
+  <data name="EmailTestMessage" xml:space="preserve">
+    <value>QUERY LENGTH LIMIT EXCEDEED. MAX ALLOWED QUERY : 500 CHARS</value>
+  </data>
+  <data name="TextMessageTestSender" xml:space="preserve">
+    <value>Voller Stapel!</value>
+  </data>
+  <data name="PleaseProvideASenderName" xml:space="preserve">
+    <value>Bitte geben Sie einen Namen an</value>
+  </data>
+  <data name="PleaseProvideAMobileNumber" xml:space="preserve">
+    <value>Bitte geben Sie eine Handy-Nummer!</value>
+  </data>
+</root>

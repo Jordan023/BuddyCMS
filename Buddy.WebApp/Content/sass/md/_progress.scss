@@ -1,0 +1,72 @@
+@keyframes progress-bar-stripes {
+    from {
+        background-position: $progress-height 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.progress {
+    display: flex;
+    overflow: hidden; // force rounded corners by cropping it
+    font-size: $progress-font-size;
+    line-height: $progress-height;
+    text-align: center;
+    background-color: $progress-bg;
+    @include border-radius($progress-border-radius);
+}
+
+.progress-bar {
+    height: $progress-height;
+    line-height: $progress-height;
+    color: $progress-bar-color;
+    background-color: $progress-bar-bg;
+    @include transition($progress-bar-transition);
+}
+
+.progress-bar-striped {
+    @include gradient-striped();
+    background-size: $progress-height $progress-height;
+}
+
+.progress-bar-animated {
+    animation: progress-bar-stripes $progress-bar-animation-timing;
+}
+
+.loading-wrapper {
+    text-align: center;
+}
+
+.loading-icon-big {
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    text-align: center;
+    background-image: url("../assets/images/loading.gif");
+    background-size: 128px;
+}
+.loading-icon-medium {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    text-align: center;
+    background-image: url("../assets/images/loading.gif");
+    background-size: 64px;
+}
+.loading-icon-small {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    background-image: url("../assets/images/loading.gif");
+    background-size: 32px;
+}
+.loading-icon-extra-small {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    background-image: url("../assets/images/loading.gif");
+    background-size: 16px;
+}

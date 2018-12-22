@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Забыли пароль</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="LoginIncorrect" xml:space="preserve">
+    <value>Неверный логин</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>пароль</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Запомни меня</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Поле обязательное {0}</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="InvalidAPIKeyprovided" xml:space="preserve">
+    <value>Недействительный ключ API предоставлен</value>
+  </data>
+  <data name="InvalidUsernamePassword" xml:space="preserve">
+    <value>Неверное имя пользователя / пароль</value>
+  </data>
+  <data name="NoAPIKeyConfigured" xml:space="preserve">
+    <value>Не настроен ключ API</value>
+  </data>
+  <data name="NoAPIUrlConfigured" xml:space="preserve">
+    <value>Нет API UrlConfigured</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Нет полномочий</value>
+  </data>
+  <data name="BarcodeImageUrl" xml:space="preserve">
+    <value>Образец изображения штрих-кода</value>
+  </data>
+  <data name="FirstSetup" xml:space="preserve">
+    <value>Первая настройка</value>
+  </data>
+  <data name="InvalidTwoFactorCode" xml:space="preserve">
+    <value>Недопустимый двухфакторный код</value>
+  </data>
+  <data name="ManualSetupCode" xml:space="preserve">
+    <value>Ручная настройка</value>
+  </data>
+  <data name="TwoFactorToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Китайский</value>
+  </data>
+  <data name="Dutch" xml:space="preserve">
+    <value>Olandese</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Французский</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Немецкий</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="AccountSettings" xml:space="preserve">
+    <value>Настройки аккаунта</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>Общение</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Корпус</value>
+  </data>
+  <data name="Grid" xml:space="preserve">
+    <value>Сетка</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>«Home»</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Искать</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Раз</value>
+  </data>
+  <data name="Testpage" xml:space="preserve">
+    <value>Тестовая версия</value>
+  </data>
+  <data name="NoAPIKeyprovided" xml:space="preserve">
+    <value>Вы не ввели свой API ключ</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Мой личный кабинет</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Guidelines" xml:space="preserve">
+    <value>Рекомендации</value>
+  </data>
+  <data name="Checkboxes" xml:space="preserve">
+    <value>Checkboxes</value>
+  </data>
+  <data name="CustomParamaters" xml:space="preserve">
+    <value>Пользовательских параметров</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Predefinito</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Отключить</value>
+  </data>
+  <data name="TextBoxes" xml:space="preserve">
+    <value>Текстовые поля</value>
+  </data>
+  <data name="Grids" xml:space="preserve">
+    <value>Макеты</value>
+  </data>
+  <data name="Urls" xml:space="preserve">
+    <value>URL-адреса</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Изображения</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Оповещения</value>
+  </data>
+  <data name="Dialogs" xml:space="preserve">
+    <value>Диалоги</value>
+  </data>
+  <data name="Buttons" xml:space="preserve">
+    <value>Кнопки</value>
+  </data>
+  <data name="ReturnUrl" xml:space="preserve">
+    <value>URL возврата</value>
+  </data>
+  <data name="DateTimeControls" xml:space="preserve">
+    <value>Элементы управления типа DateTime!</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Переключатели</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>Вкл</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Правильно.</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Неправильно.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>имя</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Веб-сайт</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>Назачение агентов</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>обзор</value>
+  </data>
+  <data name="Branche" xml:space="preserve">
+    <value>Branche!</value>
+  </data>
+  <data name="CreditNumber" xml:space="preserve">
+    <value>Номер кредита!</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="Turnover" xml:space="preserve">
+    <value>Оборот</value>
+  </data>
+  <data name="Matchs" xml:space="preserve">
+    <value>Защелкните ik niks Ван!</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>_Добавить &gt;&gt;</value>
+  </data>
+  <data name="AddFormTitle" xml:space="preserve">
+    <value>Добавить новую строку для</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="autoFit" xml:space="preserve">
+    <value>Auto уместить эту статью!</value>
+  </data>
+  <data name="autoFitAll" xml:space="preserve">
+    <value>Автоподбор все столбцы!</value>
+  </data>
+  <data name="BatchSaveConfirm" xml:space="preserve">
+    <value>Вы уверены, что вы хотите сохранить изменения?</value>
+  </data>
+  <data name="BatchSaveLostChanges" xml:space="preserve">
+    <value>Несохраненные изменения будут потеряны. Вы уверены, что вы хотите продолжить?</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>Между</value>
+  </data>
+  <data name="Blanks" xml:space="preserve">
+    <value>Пустоты</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>отмена</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>отмена</value>
+  </data>
+  <data name="CancelEdit" xml:space="preserve">
+    <value>вы уверены, что хотите отменить все изменения</value>
+  </data>
+  <data name="ChooseColumns" xml:space="preserve">
+    <value>Выберите столбец!</value>
+  </data>
+  <data name="ChooseDate" xml:space="preserve">
+    <value>ВЫБЕРИТЕ ДАТУ</value>
+  </data>
+  <data name="ClearButton" xml:space="preserve">
+    <value>очистить</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Очистить фильтр</value>
+  </data>
+  <data name="Columnchooser" xml:space="preserve">
+    <value>Столбцы...</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Содержит:</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Копировать...</value>
+  </data>
+  <data name="Csvexport" xml:space="preserve">
+    <value>Экспорт в формат CSV</value>
+  </data>
+  <data name="CustomFilter" xml:space="preserve">
+    <value>Слэг пользовательского фильтра</value>
+  </data>
+  <data name="CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>ВЫБЕРИТЕ ДАТУ</value>
+  </data>
+  <data name="CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Введите значение</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить?</value>
+  </data>
+  <data name="DeleteOperationAlert" xml:space="preserve">
+    <value>Нет записей, выбранных для операции удаления!</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Удалить запись</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="EditFormTitle" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="EditOperationAlert" xml:space="preserve">
+    <value>Для операции редактирования нет записей!</value>
+  </data>
+  <data name="EditRecord" xml:space="preserve">
+    <value>Редактировать запись</value>
+  </data>
+  <data name="EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource не должен быть пустым при начальной загрузке, поскольку столбцы генерируются из dataSource в сетке столбцов AutoGenerate!</value>
+  </data>
+  <data name="EmptyRecord" xml:space="preserve">
+    <value>Нет записей для отображения</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>оканчивается на</value>
+  </data>
+  <data name="EnterValue" xml:space="preserve">
+    <value>Введите значение</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>EQUAL</value>
+  </data>
+  <data name="Excelexport" xml:space="preserve">
+    <value>Экспорт Excel</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>экспорт</value>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>&lt;ложь&gt;</value>
+  </data>
+  <data name="FilterbarTitle" xml:space="preserve">
+    <value>\s фильтр Бар сотовый!</value>
+  </data>
+  <data name="FilterButton" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="FilterFalse" xml:space="preserve">
+    <value>&lt;ложь&gt;</value>
+  </data>
+  <data name="FilterMenu" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="FilterTrue" xml:space="preserve">
+    <value>&lt;истина&gt;</value>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>Первая страница</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>больше чем</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>Больше или равно</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группировать по этому столбцу</value>
+  </data>
+  <data name="GroupDisable" xml:space="preserve">
+    <value>Группировка отключена для этого столбца!</value>
+  </data>
+  <data name="GroupDropArea" xml:space="preserve">
+    <value>Перетащите заголовок столбца в группу по этому столбцу</value>
+  </data>
+  <data name="InvalidFilterMessage" xml:space="preserve">
+    <value>Недопустимый фильтр данных!</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Элементы:</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Последняя страница</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>меньше чем</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>Меньше или равно</value>
+  </data>
+  <data name="MatchCase" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Следующая страница &gt;</value>
+  </data>
+  <data name="NoResult" xml:space="preserve">
+    <value>(совпадений не найдено).</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>Не равно</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>Число фильтров!</value>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>ок</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>/, \, |, *, ?, ", &lt; или &gt;</value>
+  </data>
+  <data name="Pdfexport" xml:space="preserve">
+    <value>Экспорт в PDF</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>&lt; Предыдущая страница</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="SearchColumns" xml:space="preserve">
+    <value>Поиск столбцов!</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>выбрать все</value>
+  </data>
+  <data name="ShowRowsWhere" xml:space="preserve">
+    <value>Показать строки где:!</value>
+  </data>
+  <data name="SortAscending" xml:space="preserve">
+    <value>Сортировать по возрастанию</value>
+  </data>
+  <data name="SortDescending" xml:space="preserve">
+    <value>Сортировать по убыванию</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>Начинается с</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Текстовые фильтры!</value>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>&lt;истина&gt;</value>
+  </data>
+  <data name="UnGroup" xml:space="preserve">
+    <value>Нажмите здесь, чтобы разгруппировать!</value>
+  </data>
+  <data name="Ungroup1" xml:space="preserve">
+    <value>Разгруппируйте по этой колонке!</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value> Обновлять</value>
+  </data>
+  <data name="Wordexport" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="AutoFit" xml:space="preserve">
+    <value>Auto уместить эту статью!</value>
+  </data>
+  <data name="AutoFitAll" xml:space="preserve">
+    <value>Автоподбор все столбцы!</value>
+  </data>
+  <data name="CurrentPageInfo" xml:space="preserve">
+    <value>{0} {1} страниц!</value>
+  </data>
+  <data name="FirstPageTooltip" xml:space="preserve">
+    <value>На первую страницу</value>
+  </data>
+  <data name="LastPageTooltip" xml:space="preserve">
+    <value>На последнюю страницу</value>
+  </data>
+  <data name="NextPagerTooltip" xml:space="preserve">
+    <value>На следующую страницу</value>
+  </data>
+  <data name="NextPageTooltip" xml:space="preserve">
+    <value>На следующую страницу</value>
+  </data>
+  <data name="PreviousPagerTooltip" xml:space="preserve">
+    <value>На предыдущую страницу</value>
+  </data>
+  <data name="PreviousPageTooltip" xml:space="preserve">
+    <value>На предыдущую страницу</value>
+  </data>
+  <data name="TotalItemsInfo" xml:space="preserve">
+    <value>0 товаров</value>
+  </data>
+</root>

@@ -1,0 +1,447 @@
+﻿
+<body class="layout layout-vertical layout-left-navigation layout-above-toolbar layout-above-footer">
+<main>
+@Html.Partial("_Header")
+<div id="wrapper">
+
+@Html.Partial("_Navigation")
+
+<div class="content-wrapper">
+
+    <div class="content custom-scrollbar">
+        <div class="doc data-table-doc page-layout simple full-width">
+            <!-- HEADER -->
+            <div class="page-header bg-primary text-auto p-6 row no-gutters align-items-center justify-content-between">
+                <h1 class="doc-title h4" id="content">Uren verantwoording</h1>
+            </div>
+            <!-- / HEADER -->
+            <!-- CONTENT -->
+
+            <div class="hours-nav-wrapper" id="hours-nav-wrapper">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="changeDates(-1);"><i class="icon-chevron-left hours-icon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(1, false);">
+                            <span class="hour-day" id="day1"></span>
+                            <span class="hour-time">0:12</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(2, false);">
+                            <span class="hour-day" id="day2"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(3, false);">
+                            <span class="hour-day" id="day3"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(4, false);">
+                            <span class="hour-day" id="day4"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(5, false);">
+                            <span class="hour-day" id="day5"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(6, false);">
+                            <span class="hour-day" id="day6"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hour-flex" onclick="loadData(7, false);">
+                            <span class="hour-day" id="day0"></span>
+                            <span class="hour-time">0:00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="changeDates(1);"><i class="icon-chevron-right hours-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-content" style="display: flex; margin-left: 14%; margin-top: 15px;">
+
+                <div class="add-hour">
+                    <button type="button" class="btn btn-secondary btn-fab" data-toggle="modal" data-target="#add-task">
+                        <i class="icon-plus"></i>
+                    </button>
+                </div>
+                <table class="table table-hours" id="table-hours">
+                    <thead>
+                        <tr>
+                            <th colspan="3"><strong id="daytext"></strong> <span id="daynumber"></span> <span id="monthtext"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-hours"></tbody>
+                </table>
+            </div>
+
+
+            <div class="loading-wrapper" style="margin-top: 25px;">
+                <span id="loading-icon" class="loading-icon-small">
+                </span>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <!-- MODAL-->
+        <div id="add-task" class="modal fade" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-hour-title" id="myLargeModalLabel">Nieuwe tijdregistratie</h4>
+                        <button type="button" class="close modal-hour-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 0px">
+                        <form class="container" id="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="hour-add-label" for="validationCustom01">Project en taak</label>
+                                    <input type="text" class="form-control hour-text" id="project" placeholder="Project"
+                                           value="" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid project.
+                                    </div>
+                                    <input type="text" class="form-control hour-text" id="task" placeholder="Taak"
+                                           value="" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid task.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="hour-add-label" for="validationCustom03">Beschrijving</label>
+                                    <textarea class="form-control hour-textarea" id="description" placeholder="Description" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid description.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="hour-add-label" for="validationCustom03">Begin- en eindtijd</label>
+                                </div>
+                                    <div class="col-sm-3">
+                                        <input type="time" class="form-control" id="starttime" placeholder="Begintijd" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid start time.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        tot
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="time" class="form-control" id="endtime" placeholder="Eindtijd" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid end time.
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success hour-btn" type="button" onclick="AddHour();">Toevoegen</button>
+                                <button class="btn btn-light hour-btn" type="button">Annuleren</button>
+</form>
+
+                        <script>
+                            var jsonArray = "";
+                            function cacheHours() {
+                                $.ajaxSetup({
+                                    async: false
+                                });
+                                $.getJSON('@Url.Action("GetHourByUserAndDate", "Hour")',
+                                    function (json) {
+                                        jsonArray = JSON.parse(json);
+                                });
+                                $.ajaxSetup({
+                                    async: true
+                                });
+                            }
+
+                            function showLoading(displayNone = false) {
+                                var x = document.getElementById("loading-icon");
+                                if (x.style.display === "none" && !displayNone) {
+                                    x.style.display = "inline-block";
+                                } else {
+                                    x.style.display = "none";
+                                }
+                            }
+                        
+                            function changeDates(count) {
+                                var oldCount = Number(getCookie('countNumber'))
+                                var newCount = oldCount + count;
+                                setCookie('countNumber', newCount);
+                                setDates(getCookie('countNumber'));
+                            }
+
+                            function loadData(dayNumber, onLoad) {
+                                setCookie('dayNumber', dayNumber, 7);
+                                getCurrentDay(dayNumber, onLoad);
+                            }
+
+                            function onLoad() {
+                                cacheHours();
+
+                                if (getCookie('countNumber').length == 0)
+                                    setCookie('countNumber', 0, 7);
+                                if (getCookie('dayNumber').length == 0)
+                                    setCookie('dayNumber', moment().day(), 7);
+                                if (getCookie('activeDate').length == 0) {
+                                    var currentDate = moment().format('DD/MM/YYYY');
+                                    setCookie('activeDate', currentDate, 7);
+                                }
+
+                                setDates(getCookie('countNumber'));
+                                loadData(getCookie('dayNumber'), true);
+                            }
+                            
+                            window.onload = onLoad();
+
+                            function getCurrentDay(dayNumber, onLoad) {
+                                showLoading();
+                                $("#tbody-hours").empty();
+                                var count = getCookie('countNumber');
+                                var dt = moment();
+                                if (count < 0)
+                                    dt.subtract(count * -1, 'weeks');
+                                if (count > 0)
+                                    dt.add(count, 'weeks');
+
+                                var newDay = dayNumber - dt.day();
+                                if (newDay > 0)
+                                    dt.add(newDay, 'days');
+                                if (newDay < 0)
+                                    dt.subtract(newDay * -1, 'days');
+                       
+                                if (onLoad) {
+                                    var activeDate = getCookie('activeDate');
+                                    var date = moment(activeDate, 'DD/MM/YYYY').toDate();
+                                    dt = moment(date);
+                                }
+                                                             
+                                var days = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+                                var months = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+                                var currentDay = days[dt.day()];
+                                var currentMonth = months[dt.month()];
+                                $("#daytext").text(currentDay);
+                                $("#daynumber").text(dt.date());
+                                $("#monthtext").text(currentMonth);
+
+                                var activeDate = dt.format('DD/MM/YYYY');
+                                setCookie('activeDate', activeDate, 7);
+                                
+                                LoadHours();
+                            }
+
+                            function LoadHours() {
+                                var table = document.getElementById("table-hours");
+                                        for (var i = 0; i < jsonArray.length; i++) {
+                                            var activeDate = moment(getCookie('activeDate'), 'DD/MM/YYYY');
+                                            var startDate = moment(jsonArray[i].startTime);
+                                            var endDate = moment(jsonArray[i].endTime);
+                                            
+                                            var momentCheck = moment(activeDate).format('DD/MM/YYYY');
+                                            var momentCheck2 = moment(startDate).format('DD/MM/YYYY');
+                                            
+                                            if (momentCheck === momentCheck2) {
+                                            var row = table.getElementsByTagName('tbody')[0].insertRow();
+                                            var cell1 = row.insertCell(0);
+                                            cell1.className = "hours-td-1";
+                                            var cell2 = row.insertCell(1);
+                                            cell2.className = "hours-td-2";
+                                            var cell3 = row.insertCell(2);
+                                            cell3.className = "hours-td-3";
+                                            var cell4 = row.insertCell(3);
+                                            cell4.className = "hours-td-edit-remove";
+                                            cell4.id = jsonArray[i].id;
+                                            
+                                            var differenceInMinutes = endDate.diff(startDate, "minutes");
+
+                                            var startTime = jsonArray[i].startTime.substring(11, 16);
+                                            var endTime = jsonArray[i].endTime.substring(11, 16);
+
+                                            var minutesNumber = parseInt(differenceInMinutes % 60);
+                                            var minutes = minutesNumber;
+                                            if (minutesNumber < 10)
+                                                minutes = "0" + minutesNumber;
+
+                                            var hours = parseInt(differenceInMinutes / 60);
+
+                                            // Add some text to the new cells:
+                                            cell1.innerHTML = "<div class='hours-start-time'>" + startTime + "</div><div class='hours-end-time'>" + endTime + "</div>";
+                                            cell2.innerHTML = "<div class='hours-project'>" + jsonArray[i].project + "</div><div class='hours-task'>" + jsonArray[i].task + "</div><div class='hours-description'>" + jsonArray[i].description + "</div>";
+                                            cell3.innerHTML = hours + ":" + minutes;
+                                            cell4.innerHTML = "<div class='hours-edit'><div class='hours-text'><i class='icon-lead-pencil' style='color: white' ></i></div></div><div class='hours-remove' onclick='deleteHour(" + jsonArray[i].id + ")'> <div class='hours-text'><i class='icon-delete' style='color: white' ></i></div></div>";
+                                        }
+
+                                        }
+
+                                        var row = table.getElementsByTagName('tbody')[0].insertRow();
+                                        var cell1 = row.insertCell(0);
+                                        cell1.className = "hours-td-total";
+                                        cell1.colSpan = 3;
+                                        cell1.innerHTML = "Totaal: <strong>0:04</strong>";
+
+                                        showLoading(true);
+                                    
+                            }
+
+                            function deleteHour(id) {
+                                $.ajax({
+                                      type: 'GET',
+                                      url: '@Url.Action("DeleteHour", "Hour")',
+                                    data: { id: id },
+                                      success: function() {
+                                        alert("Successfully deleted!");
+                                      }
+                                    });
+                            }
+
+                            var container = document.getElementById("hours-nav-wrapper");
+                            var navs = container.getElementsByClassName("hour-flex");
+                                for (var i = 0; i < navs.length; i++) {
+                                    navs[i].addEventListener("click", function () {
+                                        var current = document.getElementsByClassName("active");
+
+                                        // If there's no active class
+                                        if (current.length > 0) {
+                                            current[0].className = current[0].className.replace(" active", "");
+                                        }
+
+                                        // Add the active class to the current/clicked button
+                                        this.className += " active";
+                                    });
+                                }
+
+                            function setDates(count) {
+                                var dt = moment();
+                                if (count < 0)
+                                    dt.subtract(count * -1, 'weeks');
+                                if (count > 0)
+                                    dt.add(count, 'weeks');
+
+                                var currentDay = moment();
+                                var currentWeekDay = dt.day();
+                                
+                                var lessDays = currentWeekDay == 0 ? 6 : currentWeekDay - 1
+                                var firstDay = dt.clone().subtract(lessDays, 'days');
+                                
+                                var days = ['zo.', 'ma. ', 'di. ', 'wo. ', 'do. ', 'vr.', 'za.'];
+                                for (i = 0; i < days.length; i++) {
+                                    var checkDay = firstDay.clone();
+
+                                    if (i == 0)
+                                        checkDay = checkDay.add(6, 'days');
+                                    else
+                                        checkDay = checkDay.add(i - 1, 'days');
+
+                                    $('#day' + i).text(days[i] + checkDay.date());
+
+                                    if (currentDay.format() == checkDay.format())
+                                        $('#day' + i).text("Vandaag");
+
+                                    if (checkDay.format('DD/MM/YYYY') == getCookie('activeDate')) {
+                                        $('#day' + i).parent().addClass('active');
+                                    } else {
+                                        $('#day' + i).parent().removeClass('active');
+                                    }
+                                }
+                            }
+
+    (function () {
+        "use strict";
+        window.addEventListener("load", function () {
+            var form = document.getElementById("needs-validation");
+            form.addEventListener("submit", function (event) {
+                if ( form.checkValidity() == false )
+                {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        }, false);
+                            }());
+
+                            function GetJsonData() {
+                                var project = $("#project").val();
+                                var task = $("#task").val();
+                                var description = $("#description").val();
+                                var startTime = $("#starttime").val();
+                                var endTime = $("#endtime").val()
+                                
+                                var activeDate = getCookie('activeDate');
+                                var startDate = moment(activeDate, 'DD/MM/YYYY').add(startTime.substring(0, 2), 'hours').add(startTime.substring(3, 5), 'minutes').toDate();
+                                var endDate = moment(activeDate, 'DD/MM/YYYY').add(endTime.substring(0, 2), 'hours').add(endTime.substring(3, 5), 'minutes').toDate();
+                                var formattedStartDate = moment(startDate).format('YYYY-MM-DD HH:mm');
+                                var formattedEndDate = moment(endDate).format('YYYY-MM-DD HH:mm');
+                            
+                                var jsonObj = { project: project, task: task, description: description, startTime: formattedStartDate, endTime: formattedEndDate }
+                                return JSON.stringify(jsonObj);
+                            }
+
+                            function AddHour() {
+                                var jsonResult = GetJsonData();
+                                $.ajax({
+                                      type: 'POST',
+                                      url: '@Url.Action("AddHour", "Hour")',
+                                      dataType: 'json',
+                                      data: ({
+                                          jsonPost: jsonResult 
+                                      }),
+                                      success: function() {
+                                        alert("Successfully posted!");
+                                      }
+                                    });
+                            }
+
+                            function setCookie(name, value, days) {
+                                var expires = "";
+                                if (days) {
+                                    var date = new Date();
+                                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                                    expires = "; expires=" + date.toUTCString();
+                                }
+                                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+                            }
+                            function getCookie(name) {
+                                var nameEQ = name + "=";
+                                var ca = document.cookie.split(';');
+                                for (var i = 0; i < ca.length; i++) {
+                                    var c = ca[i];
+                                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                                }
+                                return null;
+                            }
+                            function eraseCookie(name) {
+                                document.cookie = name + '=; Max-Age=-99999999;';
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL-->
+
+    </div>
+</div>
+</div>
+@Html.Partial("_Footer")
+</main>
+</body>
+

@@ -1,0 +1,60 @@
+﻿<aside id="aside" class="aside aside-left" data-fuse-bar="aside" data-fuse-bar-media-step="md" data-fuse-bar-position="left">
+    <div class="aside-content bg-primary-700 text-auto">
+        <div class="aside-toolbar">
+            <div class="logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">BUDDY</span>
+            </div>
+            <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block" data-fuse-aside-toggle-fold>
+                <i class="icon icon-backburger"></i>
+            </button>
+        </div>
+        <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
+            <li class="subheader">
+                <span>General</span>
+            </li>
+            <li class="nav-item" role="tab" id="heading-dashboards">
+                <a class="nav-link ripple with-arrow collapsed" data-toggle="collapse" data-target="#collapse-dashboards" href="#" aria-expanded="false" aria-controls="collapse-dashboards">
+                    <i class="icon s-4 icon-tile-four"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+        <li class="nav-item" role="tab" id="heading-invoice">
+            <a class="nav-link ripple with-arrow collapsed" data-toggle="collapse" data-target="#collapse-invoice" href="#" aria-expanded="false" aria-controls="collapse-invoice">
+                <i class="icon s-4 icon-cart"></i>
+                <span>Facturen</span>
+            </a>
+            <ul id="collapse-invoice" class='collapse ' role="tabpanel" aria-labelledby="heading-invoice" data-children=".nav-item">
+                <li class="nav-item">
+                    <a class="nav-link ripple " href="@Url.Action("Index", "Invoice")">
+                        <span>Bekijk facturen</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ripple " href="@Url.Action("Create", "Invoice")">
+                        <span>Nieuw factuur</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+            <li class="nav-item" role="tab" id="heading-hour">
+                <a class="nav-link ripple with-arrow collapsed" data-toggle="collapse" data-target="#collapse-hour" href="#" aria-expanded="false" aria-controls="collapse-hour">
+                    <i class="icon s-4 icon-cart"></i>
+                    <span>Urenverantwoording</span>
+                </a>
+                <ul id="collapse-hour" class='collapse ' role="tabpanel" aria-labelledby="heading-hour" data-children=".nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href="@Url.Action("Index", "Hour")">
+                            <span>Bekijk urenoverzicht</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href="@Url.Action("Index", "Invoice")">
+                            <span>Uren toevoegen</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>
